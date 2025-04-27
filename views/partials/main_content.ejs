@@ -1,0 +1,118 @@
+<% if (main_content_description) { %>
+  <% if (main_content_description==="home" ) { %>
+    <div class="Welcome_description">
+      <div class="main_content">
+        <h2 class="welcome_text">
+          <%= welcome_text %>
+        </h2>
+        <div class="travel_description">
+          <p>Travel Explorer is your ultimate guide to discovering the world's most breathtaking destinations. From
+            iconic landmarks to hidden gems, our carefully curated guides help you plan unforgettable journeys across
+            continents. Whether you're seeking adventure, culture, relaxation, or inspiration, Travel Explorer offers
+            trusted tips, destination insights, and expert advice to make your travels smoother and more memorable. Let
+            your next adventure begin here!</p>
+        </div>
+      </div>
+    </div>
+
+    <% } else if (main_content_description==="America" ) { %>
+      <div class="Welcome_description">
+        <div class="main_content_america">
+          <h2 class="welcome_text">
+            <%= welcome_text %>
+          </h2>
+          <div class="travel_description">
+            <p>America spans vast landscapes and cultures, from the skyscrapers of New York City to the rainforests of
+              Brazil and the pristine wilderness of Canada. North, Central, and South America together form a vibrant
+              mosaic of history, nature, and modern marvels. Visitors can experience bustling cities, majestic
+              mountains, tropical beaches, and ancient ruins, all while discovering the diverse heritage and spirit of
+              each region. Whether you’re exploring iconic landmarks, immersing yourself in festivals, or embarking on
+              epic road trips, the Americas offer journeys as bold and varied as their people.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <% } else if (main_content_description==="Europe" ) { %>
+        <div class="Welcome_description">
+          <div class="main_content_america">
+            <h2 class="welcome_text">
+              <%= welcome_text %>
+            </h2>
+            <div class="travel_description">
+              <p>Europe is a continent rich in history, culture, and diversity. From the romantic streets of Paris to
+                the ancient ruins of Rome and the sunny beaches of Spain, Europe offers a blend of old-world charm and
+                modern sophistication. Travelers can explore medieval castles, art masterpieces, stunning landscapes,
+                and culinary delights across many different countries — all within relatively short distances. Whether
+                you're admiring Gothic cathedrals, hiking in the Alps, or tasting fresh pastries in a cozy café, Europe
+                promises an unforgettable journey through time and tradition.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <% } else if (main_content_description==="Asia" ) { %>
+          <div class="Welcome_description">
+            <div class="main_content_america">
+              <h2 class="welcome_text">
+                <%= welcome_text %>
+              </h2>
+              <div class="travel_description">
+                <p>Asia is the largest and most diverse continent on Earth, a fusion of ancient traditions and
+                  futuristic cities. From the peaceful temples of Japan to the vibrant markets of Thailand and the
+                  breathtaking beaches of Bali, Asia enchants travelers with its rich cultures, religions, landscapes,
+                  and cuisines. Whether you're climbing sacred mountains, wandering through neon-lit metropolises, or
+                  savoring spicy street food, Asia offers endless adventures and discoveries at every turn. It's a place
+                  where centuries-old customs coexist with cutting-edge innovation.</p>
+              </div>
+            </div>
+          </div>
+
+          <% } else if (main_content_description==="Travel" ) { %>
+            <div class="main_content_description">
+              <h1 class="header_title">Destination: <%= travel.name %>
+              </h1>
+              <img src="<%= travel.image %>"alt="<%= travel.name %>"
+                width="500px" height="auto"/>
+                
+                <p><strong>Country:</strong>
+                  <%= travel.country %>
+                </p>
+                <p><strong>Best Time to Visit:</strong>
+                  <%= travel.bestTimeToVisit %>
+                </p>
+                <p><strong>Average Cost:</strong>
+                  <%= travel.averageCost %>
+                </p>
+
+                
+
+                <p><strong>Currency:</strong>
+                  <%= travel.currency %>
+                </p>
+                <p><strong>Language:</strong>
+                  <%= travel.language %>
+                </p>
+                <p><strong>climate:</strong>
+                  <%= travel.climate %>
+                </p>
+                <p><strong>food:</strong>
+                  <%= travel.food %>
+                </p>
+                <p><strong>highlights:</strong>
+                  <%= travel.highlights %>
+                </p>
+                <p><strong>attractions:</strong>
+                  <%= travel.attractions %>
+                </p>
+                <p><strong>visa:</strong>
+                  <%= travel.visa %>
+                </p>
+                <p><strong>Description:</strong>
+                  <%= travel.description %>
+                </p>
+
+
+            </div>
+            <% } %>
+              <% } %>

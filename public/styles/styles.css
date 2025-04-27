@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #475527;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/background.jpg);
+}
+
+.header {
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 8px;
+    padding: 0 16px 8px 16px;
+}
+
+.pageLogo-title {
+    color: rgb(209 190 190);
+    text-decoration: none;
+}
+
+.navbar {
+    display: grid;
+    font-size: 24px;
+    grid-template: 1fr / repeat(2, 50%);
+}
+
+.navbar .menu-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.right-menu {
+    color: rgb(209 190 190);
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.right_menu:hover {
+    font-weight: 700;
+    text-decoration: overline;
+    transition: font-weight 0.15s, text-decoration 0.15s;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    left: 0;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-btn {
+    width: 100%;
+    padding: 12px;
+    background: #283618; 
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.sidebar-btn:hover {
+    color: #1BBD97;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.sidebar ul li a {
+    color: rgb(12, 168, 25);
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 18px;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgb(12, 168, 25);
+    color: white;
+}
+
+.main_content {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover; 
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px 20px;
+}
+
+
+.Welcome_description, 
+.main_content_description {
+    background: rgba(29, 96, 74, 0.8); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
+  
+}
+
+.main_content_asia {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px 20px;
+    
+}
+
+.main_content_silver {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px 20px;  
+}
+
+.main_content_america {
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px 20px;  
+}
+
+.welcome_text,
+.header_title {
+    font-size: 32px;
+    color: rgb(15, 12, 12); 
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.travel_description p, 
+.main_content_description p {
+    font-size: 24px;
+    color: #a3a39e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.main_content_description img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main_content_description p strong {
+    color: #997a25;
+    font-size: 24px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: black;
+    gap: 24px;
+    padding: 20px;
+    flex-direction: row;
+    width: 100%;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.footer-copyright{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    
+}
+
+.footer-contact h4 {
+    font-size: 1rem;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+}
+
+.footer_social-media h6 {
+    font-size: 1rem;
+}
+
+.footer_social-media a {
+    margin: 2px;
+
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .header {
+        text-align: center;
+        padding: 4px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .navbar .menu-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right-menu {
+        font-size: 1rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .sidebar-btn {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_content, 
+    .main_content_asia, 
+    .main_content_europe, 
+    .main_content_america {
+        min-height: 50vh;
+        padding: 30px 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .Welcome_description, 
+    .main_content_description {
+        max-width: 100%;
+        padding: 4px;
+        font-size: 8px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .welcome_text,
+    .header_title {
+        font-size: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 40px;
+    }
+}
+
+/* 🔹 Tablets (769px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .navbar .menu-links {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .main_content, 
+    .main_content_asia, 
+    .main_content_europe, 
+    .main_content_america  {
+        min-height: 60vh;
+        padding: 40px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}

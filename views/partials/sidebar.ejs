@@ -1,0 +1,14 @@
+<aside class="sidebar">
+    <% destination_name.forEach(travel => { %>
+
+        <a href="/<%= travel.category.toLowerCase() + '/' + travel.name.toLowerCase().replace(/\s+/g, "_").replace(/[^\w\-]/g, "_") %>" class="sidebar-link">
+
+
+            <button class="sidebar-btn">
+                <%= travel.name %>
+            </button>
+        </a>
+    <% }) %>
+</aside>
+
+
